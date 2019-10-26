@@ -1,4 +1,4 @@
-#E_PDOStatement
+# E_PDOStatement
 
 Extension to the default PHP PDOStatement class providing the ability to generate a version of a parameterized query with the parameters injected into the query string.
 
@@ -6,7 +6,7 @@ The result is generally suitable for logging activities, debugging and performan
 
 View the [changelog](CHANGELOG.md)
 
-##Usage
+## Usage
 
 PHP's PDO are a much improved way for handling database communications, but not being able to view a complete version of the query to be executed on the server after statement parameters have been interpolated can be frustrating.
 
@@ -150,14 +150,3 @@ That's all there is to it.
 
 Ideally, your project would have a PDO abstraction/wrapper class allowing you to implement this modification in only one place.
 If you don't have this luxury, success was shown with extending the \PDO class to set the ATTR_STATEMENT_CLASS attribute in the constructor of the PDO.
-
-##Get in Touch
-There are a lot of forum posts related to or requesting this type of functionality, so hopefully someone somewhere will find it helpful. If it helps you, comments are of course appreciated.
-
-Bugs, new feature requests and pull requests are of course welcome as well. This was created to help our pro team solve an issue, so it was designed around our specific work flow. If it doesn't work for you though, let me know and I'll be happy to explore if I can help you out.
-
-####E_mysqli
-
-E_PDOStatement now has a sister project aimed at providing the same functionality for php devs using the `mysqli` extension:
-
-[E_mysqli](https://github.com/noahheck/E_mysqli)
